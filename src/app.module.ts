@@ -14,7 +14,7 @@ import { EnvConfiguration } from './config/env.config';
       load: [EnvConfiguration]
     }),
     ServeStaticModule.forRoot({
-      rootPath: join(__dirname, '..', 'public/pokedex/dist'),
+      rootPath: join(__dirname, '..', 'public/pokedex'),
     }),
     MongooseModule.forRoot(process.env.MONGODB),
     PokemonModule,
